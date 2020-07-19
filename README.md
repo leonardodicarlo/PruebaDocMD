@@ -1,6 +1,7 @@
 # Trabajo Final de Bioinformática - 1° Cuatrimestre 2020
 
-_Se desarrolló un Software que permite  la visualización de estudios filogenéticos y filodinámicos de secuencias, con su posterior geolocalización._
+_Se desarrolló un Software que permite  la visualización de estudios filogenéticos y filodinámicos de secuencias con su posterior geolocalización._
+
 _También puede verse la entrega de los trabajos parciales que se fueron dando en clase a través del siguiente [link](https://github.com/nahuelmpereyra/bioinformatica-entregas)._
 
 ***
@@ -15,7 +16,7 @@ _También puede verse la entrega de los trabajos parciales que se fueron dando e
 
 ## Construido con 🛠️
 
-_El trabajo está basado sobre lenguaje Python, pero se utilizaron distintas bibliotecas y programas dedicados a la biología:_
+_El trabajo está basado sobre lenguaje Python y bajo el framework de Django, pero se utilizaron distintas bibliotecas y programas dedicados a la biología:_
 
 * [Python 3](https://www.python.org/doc/) - El lenguaje utilizado para resolver la lógica de nuestro Software.
 * [Django](https://docs.djangoproject.com/en/3.0/) - El framework web escrito en Python con el que armamos los componentes del Software.
@@ -88,34 +89,34 @@ _Por último, debemos instalar IQ-Tree desde el siguiente [link](http://www.iqtr
 
 ***
 
-##Ejecución - Paso a Paso 📋
+## Ejecución - Paso a Paso 📋
 
-*Para correr nuestro software localmente debemos abrir el proyecto en un IDE (cualquiera que soporte Python), y correr lo siguiente en consola:
+* Para correr nuestro software localmente debemos abrir el proyecto en un IDE (cualquiera que soporte Python), y correr lo siguiente en consola:
 	
 ```
 $ python manage.py makemigrations
 $ python manage.py migrate	
 $ python manage.py runserver
 ```
-*Con esto, ya debiera correr localmente nuestro programa en una nueva ventana de nuestro navegador (por defecto es el puerto localhost:8000).
+* Con esto, ya debiera correr localmente nuestro programa en una nueva ventana de nuestro navegador (por defecto es el puerto localhost:8000).
 
-*Seguidamente, podemos cargar un archivo .FASTA o .fst que sólo contenga secuencias de Ácidos Nucléicos (ADN y ARN, secuencias con A-T-G-C-U).
+* Seguidamente, podemos cargar un archivo .FASTA o .fst que sólo contenga secuencias de Ácidos Nucléicos (ADN y ARN, secuencias con A-T-G-C-U).
 
-*El programa validara este archivo con las siguientes pautas:
+* El programa validara este archivo con las siguientes pautas:
 
-* Que el archivo sea formato .FASTA o .fst.
-* Que su contenido coincida con el formato de un FASTA: cabecera (>|gi|12345|gb|accessionCode) - secuencia (ATGCU).
-* Que el archivo posea además en cada cabecera una locación, unificada por pips (|) con el siguiente formato ejemplo: |loc| Universidad Nacional de Quilmes, Bernal.
-* Que cada cabecera presente en el archivo tenga su correspondiente secuencia asociada (no pueden quedar cabeceras sin secuencias).
-* Que lo imputado en cada secuencia sean efectivamente secuencias de ADN/ARN.
+** Que el archivo sea formato .FASTA o .fst.
+** Que su contenido coincida con el formato de un FASTA: cabecera (>|gi|12345|gb|accessionCode) - secuencia (ATGCU).
+** Que el archivo posea además en cada cabecera una locación, unificada por pips (|) con el siguiente formato ejemplo: |loc| Universidad Nacional de Quilmes, Bernal.
+** Que cada cabecera presente en el archivo tenga su correspondiente secuencia asociada (no pueden quedar cabeceras sin secuencias).
+** Que lo imputado en cada secuencia sean efectivamente secuencias de ADN/ARN.
 
-*Una vez pasada efectivamente esta validación, se cargará el archivo y el programa nos redireccionará automáticamente a un nuevo link donde tendremos cargado:
+* Una vez pasada efectivamente esta validación, se cargará el archivo y el programa nos redireccionará automáticamente a un nuevo link donde tendremos cargado:
 
-*Una tabla de tipo acordeón que contiene: Secuencia - Accession de GenBank - Locación.
-*Un mapa con la locación de cada una de las respectivas secuencias cargadas junto con su accession code.
-*Un diagrama de árbol filogenético donde muestra las coincidencias y discrepancias entre las secuencias según las relaciones evolutivas.
+** Una tabla de tipo acordeón que contiene: Secuencia - Accession de GenBank - Locación.
+** Un mapa con la locación de cada una de las respectivas secuencias cargadas junto con su accession code.
+** Un diagrama de árbol filogenético donde muestra las coincidencias y discrepancias entre las secuencias según las relaciones evolutivas.
 
-*Por último, se puede descargar la información obtenida y volver a correr el programa con un nuevo archivo de secuencias.
+* Por último, se puede descargar la información obtenida y volver a correr el programa con un nuevo archivo de secuencias.
 
 
 ***
