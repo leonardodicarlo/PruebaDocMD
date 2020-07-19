@@ -1,6 +1,6 @@
 # Trabajo Final de Bioinformática - 1° Cuatrimestre 2020
 
-_Se desarrolló un Software que permite  la visualización de estudios filogenéticos y filodinámicos de secuencias con su posterior geolocalización. Este Software corre de manera Web, y soporta la carga de archivos FASTA con secuencias de Ácidos Nucleicos (ADN y ARN)._
+_Se desarrolló un Software que permite  la visualización de estudios filogenéticos y filodinámicos de secuencias con su posterior geolocalización. Este Software corre en Web de manera local, y soporta la carga de archivos FASTA con secuencias de Ácidos Nucleicos (ADN y ARN)._
 
 _También puede verse la entrega de los trabajos parciales que se fueron dando en clase a través del siguiente [link](https://github.com/nahuelmpereyra/bioinformatica-entregas)._
 
@@ -35,16 +35,16 @@ _Para correr el software localmente debemos tener instalado tanto Python 3, como
 ```
 $ python3 -V
 ```
-_En caso de no tener la versión 3 de Python, correr los siguientes comandos:_
+ _En caso de no tener la versión 3 de Python, correr los siguientes comandos:_
 
 ```
-$ sudo apt-get update
-$ sudo apt-get -y upgrade
+ $ sudo apt-get update
+ $ sudo apt-get -y upgrade
 ```
-_Además, es recomendado tener instalado *pip* para manejar los paquetes:_
+ _Además, es recomendado tener instalado *pip* para manejar los paquetes:_
 
 ```
-$ sudo apt-get install -y python3-pip
+ $ sudo apt-get install -y python3-pip
 ```
 * Segundo, instalar la biblioteca de Biopython, a través de la cual manejaremos los archivos de secuencias .FASTA:
 
@@ -106,7 +106,7 @@ _El programa validara este archivo con las siguientes pautas:_
 
 * Que el archivo sea formato .FASTA o .fst.
 * Que su contenido coincida con el formato de un FASTA: cabecera (>|gi|12345|gb|accessionCode) - secuencia (ATGCU).
-* Que el archivo posea además en cada cabecera una locación, unificada por pips (|) con el siguiente formato ejemplo: |loc| Universidad Nacional de Quilmes, Bernal.
+* Que el archivo posea además en cada cabecera una locación, unificada por pipes (|) con el siguiente formato ejemplo: |loc| Universidad Nacional de Quilmes, Bernal.
 * Que cada cabecera presente en el archivo tenga su correspondiente secuencia asociada (no pueden quedar cabeceras sin secuencias).
 * Que lo imputado en cada secuencia sean efectivamente secuencias de ADN/ARN.
 
