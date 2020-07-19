@@ -1,6 +1,7 @@
 # Trabajo Final de Bioinformática - 1° Cuatrimestre 2020
 
 _Se desarrolló un Software que permite  la visualización de estudios filogenéticos y filodinámicos de secuencias con su posterior geolocalización._
+_Este Software corre de manera Web, y soporta la carga de archivos FASTA con secuencias de Ácidos Nucleicos (ADN y ARN).
 
 _También puede verse la entrega de los trabajos parciales que se fueron dando en clase a través del siguiente [link](https://github.com/nahuelmpereyra/bioinformatica-entregas)._
 
@@ -46,20 +47,20 @@ _Además, es recomendado tener instalado *pip* para manejar los paquetes:_
 ```
 $ sudo apt-get install -y python3-pip
 ```
-*Segundo, instalar la biblioteca de Biopython, a través de la cual manejaremos los archivos de secuencias .FASTA:*
+* Segundo, instalar la biblioteca de Biopython, a través de la cual manejaremos los archivos de secuencias .FASTA:
 
 ```
 $ sudo apt-get install python-biopython
 ```
 	
-*Tercero, se debe instalar ClustalW ya que el Software lo utiliza para alinear secuencias:*
+* Tercero, se debe instalar ClustalW ya que el Software lo utiliza para alinear secuencias:
 
 ```
 $ sudo apt-get update
 $ sudo apt-get install clustalw
 ```
 
-*Por último, debemos instalar IQ-Tree para que nuestro programa genere los diagramas de árbol filogenéticos:*
+* Por último, debemos instalar IQ-Tree para que nuestro programa genere los diagramas de árbol filogenéticos:
 
 ```
 $ sudo apt-get update
@@ -71,10 +72,10 @@ $ sudo apt-get install iqtree
 
 _Para correr el software localmente debemos tener instalado previamente tanto Python 3, como las respectivas librerías que listamos anteriormente._
 
-*Primero, nos asegurarnos que tenemos Python 3 correctamente instalado. Puede descargarse desde el siguiente [link](https://www.python.org/downloads/windows/).*
+* Primero, nos asegurarnos que tenemos Python 3 correctamente instalado. Puede descargarse desde el siguiente [link](https://www.python.org/downloads/windows/).
 
 
-*Segundo, instalar la biblioteca de Biopython, a través de la cual manejaremos los archivos de secuencias .FASTA:*
+* Segundo, instalar la biblioteca de Biopython, a través de la cual manejaremos los archivos de secuencias .FASTA:
 
 _Para esto, puede instalarse por la web mediante el siguiente [link](https://biopython.org/wiki/Download), o bien mediante *PIP* desde cmd/powershell:_
 	
@@ -82,10 +83,10 @@ _Para esto, puede instalarse por la web mediante el siguiente [link](https://bio
 pip install biopython
 ```
 	
-*Tercero, instalar ClustalW mediante el siguiente [link](http://www.clustal.org/download/current/). Con esto podremos realizar los alineamientos de secuencias.*
+* Tercero, instalar ClustalW mediante el siguiente [link](http://www.clustal.org/download/current/). Con esto podremos realizar los alineamientos de secuencias.
 
 
-*Por último, debemos instalar IQ-Tree desde el siguiente [link](http://www.iqtree.org/#download). Con esto dibujaremos los árboles filogenéticos.*
+* Por último, debemos instalar IQ-Tree desde el siguiente [link](http://www.iqtree.org/#download). Con esto dibujaremos los árboles filogenéticos.
 
 ***
 
