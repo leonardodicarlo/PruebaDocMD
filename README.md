@@ -1,7 +1,6 @@
 # Trabajo Final de Bioinformática - 1° Cuatrimestre 2020
 
-_Se desarrolló un Software que permite  la visualización de estudios filogenéticos y filodinámicos de secuencias con su posterior geolocalización._
-_Este Software corre de manera Web, y soporta la carga de archivos FASTA con secuencias de Ácidos Nucleicos (ADN y ARN).
+_Se desarrolló un Software que permite  la visualización de estudios filogenéticos y filodinámicos de secuencias con su posterior geolocalización. Este Software corre de manera Web, y soporta la carga de archivos FASTA con secuencias de Ácidos Nucleicos (ADN y ARN)._
 
 _También puede verse la entrega de los trabajos parciales que se fueron dando en clase a través del siguiente [link](https://github.com/nahuelmpereyra/bioinformatica-entregas)._
 
