@@ -71,15 +71,15 @@ $ sudo apt-get install iqtree
 
 _Para correr el software localmente debemos tener instalado previamente tanto Python 3, como las respectivas librerías que listamos anteriormente._
 
-_Primero, nos asegurarnos que tenemos Python 3 correctamente instalado. Puede descargarse desde el siguiente [link](https://www.python.org/downloads/windows/):_
+_Primero, nos asegurarnos que tenemos Python 3 correctamente instalado. Puede descargarse desde el siguiente [link](https://www.python.org/downloads/windows/)._
 
 
 _Segundo, instalar la biblioteca de Biopython, a través de la cual manejaremos los archivos de secuencias .FASTA:_
 
-_Para esto, puede instalarse por la web mediante el siguiente [link](https://biopython.org/wiki/Download), o bien mediante *PIP* desde cmd/powershell:_
+_	Para esto, puede instalarse por la web mediante el siguiente [link](https://biopython.org/wiki/Download), o bien mediante *PIP* desde cmd/powershell:_
 	
 ```
-pip install biopython
+	pip install biopython
 ```
 	
 _Tercero, instalar ClustalW mediante el siguiente [link](http://www.clustal.org/download/current/). Con esto podremos realizar los alineamientos de secuencias._
@@ -104,17 +104,17 @@ $ python manage.py runserver
 
 * El programa validara este archivo con las siguientes pautas:
 
-** Que el archivo sea formato .FASTA o .fst.
-** Que su contenido coincida con el formato de un FASTA: cabecera (>|gi|12345|gb|accessionCode) - secuencia (ATGCU).
-** Que el archivo posea además en cada cabecera una locación, unificada por pips (|) con el siguiente formato ejemplo: |loc| Universidad Nacional de Quilmes, Bernal.
-** Que cada cabecera presente en el archivo tenga su correspondiente secuencia asociada (no pueden quedar cabeceras sin secuencias).
-** Que lo imputado en cada secuencia sean efectivamente secuencias de ADN/ARN.
+*	 Que el archivo sea formato .FASTA o .fst.
+*	 Que su contenido coincida con el formato de un FASTA: cabecera (>|gi|12345|gb|accessionCode) - secuencia (ATGCU).
+*	 Que el archivo posea además en cada cabecera una locación, unificada por pips (|) con el siguiente formato ejemplo: |loc| Universidad Nacional de Quilmes, Bernal.
+*	 Que cada cabecera presente en el archivo tenga su correspondiente secuencia asociada (no pueden quedar cabeceras sin secuencias).
+*	 Que lo imputado en cada secuencia sean efectivamente secuencias de ADN/ARN.
 
 * Una vez pasada efectivamente esta validación, se cargará el archivo y el programa nos redireccionará automáticamente a un nuevo link donde tendremos cargado:
 
-** Una tabla de tipo acordeón que contiene: Secuencia - Accession de GenBank - Locación.
-** Un mapa con la locación de cada una de las respectivas secuencias cargadas junto con su accession code.
-** Un diagrama de árbol filogenético donde muestra las coincidencias y discrepancias entre las secuencias según las relaciones evolutivas.
+*	 Una tabla de tipo acordeón que contiene: Secuencia - Accession de GenBank - Locación.
+*	 Un mapa con la locación de cada una de las respectivas secuencias cargadas junto con su accession code.
+*	 Un diagrama de árbol filogenético donde muestra las coincidencias y discrepancias entre las secuencias según las relaciones evolutivas.
 
 * Por último, se puede descargar la información obtenida y volver a correr el programa con un nuevo archivo de secuencias.
 
