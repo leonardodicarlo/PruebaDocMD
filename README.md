@@ -76,7 +76,7 @@ _Para correr el software localmente debemos tener instalado previamente tanto Py
 
 * Segundo, instalar la biblioteca de Biopython, a través de la cual manejaremos los archivos de secuencias .FASTA:
 
-_Para esto, puede instalarse por la web mediante el siguiente [link](https://biopython.org/wiki/Download), o bien mediante *PIP* desde cmd/powershell:_
+ _Para esto, puede instalarse por la web mediante el siguiente [link](https://biopython.org/wiki/Download), o bien mediante *PIP* desde cmd/powershell:_
 	
 ```
 pip install biopython
