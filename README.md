@@ -35,16 +35,16 @@ _Para correr el software localmente debemos tener instalado tanto Python 3, como
 ```
 $ python3 -V
 ```
- _En caso de no tener la versión 3 de Python, correr los siguientes comandos:_
+   _En caso de no tener la versión 3 de Python, correr los siguientes comandos:_
 
 ```
- $ sudo apt-get update
- $ sudo apt-get -y upgrade
+   $ sudo apt-get update
+   $ sudo apt-get -y upgrade
 ```
- _Además, es recomendado tener instalado *pip* para manejar los paquetes:_
+   _Además, es recomendado tener instalado *pip* para manejar los paquetes:_
 
 ```
- $ sudo apt-get install -y python3-pip
+   $ sudo apt-get install -y python3-pip
 ```
 * Segundo, instalar la biblioteca de Biopython, a través de la cual manejaremos los archivos de secuencias .FASTA:
 
@@ -76,10 +76,10 @@ _Para correr el software localmente debemos tener instalado previamente tanto Py
 
 * Segundo, instalar la biblioteca de Biopython, a través de la cual manejaremos los archivos de secuencias .FASTA:
 
- _Para esto, puede instalarse por la web mediante el siguiente [link](https://biopython.org/wiki/Download), o bien mediante *PIP* desde cmd/powershell:_
+   _Para esto, puede instalarse por la web mediante el siguiente [link](https://biopython.org/wiki/Download), o bien mediante *PIP* desde cmd/powershell:_
 	
 ```
-pip install biopython
+   pip install biopython
 ```
 	
 * Tercero, instalar ClustalW mediante el siguiente [link](http://www.clustal.org/download/current/). Con esto podremos realizar los alineamientos de secuencias.
