@@ -32,9 +32,9 @@ _El trabajo está basado sobre lenguaje Python y bajo el framework de Django, pe
 
 _Para correr el software localmente debemos tener instalado tanto Python 3.6 o superior, como las respectivas librerías que listamos anteriormente._
 
-######
- _Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._
-######
+
+*** _Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._ ***
+
 
 * Primero, nos asegurarnos que tenemos Python 3.6 o superior correctamente instalado (chequeo a través del Terminal):
 
@@ -78,6 +78,7 @@ $ sudo apt-get install iqtree
 ```
   CLUSTAL_PATH='Donde esta instalado Clustal en tu maquina'
   IQTREE_PATH='Donde esta instalado IQTREE en tu maquina'
+  GOOGLE_MAPS_API_KEY='Dejar lo mismo que está en el archivo .env.example'
 ```
 * Con esto deberías estar listo para poder correr el Software.
 
@@ -87,9 +88,8 @@ $ sudo apt-get install iqtree
 
 _Para correr el software localmente debemos tener instalado previamente tanto Python 3.6 o superior, como las respectivas librerías que listamos anteriormente._
 
-######
- _Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._
-######
+*** _Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._ ***
+
 * Primero, nos asegurarnos que tenemos Python 3.6 o superior correctamente instalado. Puede descargarse desde el siguiente [link](https://www.python.org/downloads/windows/).
 
 
