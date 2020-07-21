@@ -32,7 +32,9 @@ _El trabajo está basado sobre lenguaje Python y bajo el framework de Django, pe
 
 _Para correr el software localmente debemos tener instalado tanto Python 3.6 o superior, como las respectivas librerías que listamos anteriormente._
 
-* _Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._
+######
+ _Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._
+######
 
 * Primero, nos asegurarnos que tenemos Python 3.6 o superior correctamente instalado (chequeo a través del Terminal):
 
@@ -71,11 +73,11 @@ $ sudo apt-get install iqtree
 ```
 * Por último, debe ingresarse a la ruta local donde se descargó este proyecto, y abrir el archivo que se encuentra en la siguiente ruta TpFinalBio -> Settings -> .env.example .
 
-*En esta misma ruta debemos crear un archivo que se llame ".env" que sea igual al "example, pero especificarle los Paths en los que está instalado Clustal e IQTree en la máquina de quien lo corre:
+ _En esta misma ruta debemos crear un archivo que se llame ".env" que sea igual al "example, pero especificarle los Paths en los que está instalado Clustal e IQTree en la máquina de quien lo corre:_
 
 ```
-CLUSTAL_PATH='Donde esta instalado Clustal en tu maquina'
-IQTREE_PATH='Donde esta instalado IQTREE en tu maquina'
+  CLUSTAL_PATH='Donde esta instalado Clustal en tu maquina'
+  IQTREE_PATH='Donde esta instalado IQTREE en tu maquina'
 ```
 * Con esto deberías estar listo para poder correr el Software.
 
@@ -85,8 +87,9 @@ IQTREE_PATH='Donde esta instalado IQTREE en tu maquina'
 
 _Para correr el software localmente debemos tener instalado previamente tanto Python 3.6 o superior, como las respectivas librerías que listamos anteriormente._
 
-* _Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._
-
+######
+ _Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._
+######
 * Primero, nos asegurarnos que tenemos Python 3.6 o superior correctamente instalado. Puede descargarse desde el siguiente [link](https://www.python.org/downloads/windows/).
 
 
@@ -105,11 +108,11 @@ _Para correr el software localmente debemos tener instalado previamente tanto Py
 
 * Por último, debe ingresarse a la ruta local donde se descargó este proyecto, y abrir el archivo que se encuentra en la siguiente ruta TpFinalBio -> Settings -> .env.example .
 
-*En esta misma ruta debemos crear un archivo que se llame ".env" que sea igual al "example, pero especificarle los Paths en los que está instalado Clustal e IQTree en la máquina de quien lo corre:
+_En esta misma ruta debemos crear un archivo que se llame ".env" que sea igual al "example, pero especificarle los Paths en los que está instalado Clustal e IQTree en la máquina de quien lo corre:_
 
 ```
-CLUSTAL_PATH='Donde esta instalado Clustal en tu maquina'
-IQTREE_PATH='Donde esta instalado IQTREE en tu maquina'
+  CLUSTAL_PATH='Donde esta instalado Clustal en tu maquina'
+  IQTREE_PATH='Donde esta instalado IQTREE en tu maquina'
 ```
 * Con esto deberías estar listo para poder correr el Software.
 
