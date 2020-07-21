@@ -23,19 +23,23 @@ _El trabajo está basado sobre lenguaje Python y bajo el framework de Django, pe
 * [Biopython](https://biopython.org/wiki/Documentation) - Biblioteca de Python para manejar archivos de secuencias biológicas.
 * [ClustalW](http://www.clustal.org/clustal2/) - Programa instalado en local para realizar el alineamiento de secuencias biológicas.
 * [IQ-Tree](http://www.iqtree.org/doc/) - Biblioteca de Python para generar estructuras de árboles filogenéticos.
+* [ETE Toolkit](http://etetoolkit.org/cookbook/) - Framework de Python para el análisis y visualización de árboles.
+
 
 ***
 
 ### Instalación (Linux) 🔧
 
-_Para correr el software localmente debemos tener instalado tanto Python 3, como las respectivas librerías que listamos anteriormente._
+_Para correr el software localmente debemos tener instalado tanto Python 3.6 o superior, como las respectivas librerías que listamos anteriormente._
 
-* Primero, nos asegurarnos que tenemos Python 3 correctamente instalado (chequeo a través del Terminal):
+* _Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._
+
+* Primero, nos asegurarnos que tenemos Python 3.6 o superior correctamente instalado (chequeo a través del Terminal):
 
 ```
 $ python3 -V
 ```
-   _En caso de no tener la versión 3 de Python, correr los siguientes comandos:_
+   _En caso de no tener la versión 3.6 o superior de Python, correr los siguientes comandos:_
 
 ```
    $ sudo apt-get update
@@ -59,19 +63,31 @@ $ sudo apt-get update
 $ sudo apt-get install clustalw
 ```
 
-* Por último, debemos instalar IQ-Tree para que nuestro programa genere los diagramas de árbol filogenéticos:
+* Cuarto, debemos instalar IQ-Tree para que nuestro programa genere los diagramas de árbol filogenéticos:
 
 ```
 $ sudo apt-get update
 $ sudo apt-get install iqtree
 ```
+* Por último, debe ingresarse a la ruta local donde se descargó este proyecto, y abrir el archivo que se encuentra en la siguiente ruta TpFinalBio -> Settings -> .env.example .
+
+*En esta misma ruta debemos crear un archivo que se llame ".env" que sea igual al "example, pero especificarle los Paths en los que está instalado Clustal e IQTree en la máquina de quien lo corre:
+
+```
+CLUSTAL_PATH='Donde esta instalado Clustal en tu maquina'
+IQTREE_PATH='Donde esta instalado IQTREE en tu maquina'
+```
+* Con esto deberías estar listo para poder correr el Software.
+
 ---
 
 ### Instalación (Windows) 🔧
 
-_Para correr el software localmente debemos tener instalado previamente tanto Python 3, como las respectivas librerías que listamos anteriormente._
+_Para correr el software localmente debemos tener instalado previamente tanto Python 3.6 o superior, como las respectivas librerías que listamos anteriormente._
 
-* Primero, nos asegurarnos que tenemos Python 3 correctamente instalado. Puede descargarse desde el siguiente [link](https://www.python.org/downloads/windows/).
+* _Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._
+
+* Primero, nos asegurarnos que tenemos Python 3.6 o superior correctamente instalado. Puede descargarse desde el siguiente [link](https://www.python.org/downloads/windows/).
 
 
 * Segundo, instalar la biblioteca de Biopython, a través de la cual manejaremos los archivos de secuencias .FASTA:
@@ -85,7 +101,18 @@ _Para correr el software localmente debemos tener instalado previamente tanto Py
 * Tercero, instalar ClustalW mediante el siguiente [link](http://www.clustal.org/download/current/). Con esto podremos realizar los alineamientos de secuencias.
 
 
-* Por último, debemos instalar IQ-Tree desde el siguiente [link](http://www.iqtree.org/#download). Con esto dibujaremos los árboles filogenéticos.
+* Cuarto, debemos instalar IQ-Tree desde el siguiente [link](http://www.iqtree.org/#download). Con esto dibujaremos los árboles filogenéticos.
+
+* Por último, debe ingresarse a la ruta local donde se descargó este proyecto, y abrir el archivo que se encuentra en la siguiente ruta TpFinalBio -> Settings -> .env.example .
+
+*En esta misma ruta debemos crear un archivo que se llame ".env" que sea igual al "example, pero especificarle los Paths en los que está instalado Clustal e IQTree en la máquina de quien lo corre:
+
+```
+CLUSTAL_PATH='Donde esta instalado Clustal en tu maquina'
+IQTREE_PATH='Donde esta instalado IQTREE en tu maquina'
+```
+* Con esto deberías estar listo para poder correr el Software.
+
 
 ***
 
@@ -120,3 +147,25 @@ _Por último, se puede descargar la información obtenida y volver a correr el p
 
 
 ***
+
+
+# AGREGADOS
+
+* Deploy a heroku
+  - heroku git:remote -a tpbioinformatica
+  - git push -u heroku master
+  
+* Deploy a Git
+  - git push -u origin master
+  
+* Cuando se agrega una dependecia correr:
+  - pip freeze > requirements.txt
+  
+* Correr migraciones en Heroku:
+  - heroku run python manage.py makemigrations
+  - heroku run python manage.py migrate
+  
+#####################################################
+#  Online Demo:                                     # 
+#  https://tpbioinformatica.herokuapp.com/           #
+#####################################################
