@@ -24,7 +24,7 @@ _El trabajo está basado sobre lenguaje Python y bajo el framework de Django, pe
 * [ClustalW](http://www.clustal.org/clustal2/) - Programa instalado en local para realizar el alineamiento de secuencias biológicas.
 * [IQ-Tree](http://www.iqtree.org/doc/) - Biblioteca de Python para generar estructuras de árboles filogenéticos.
 * [ETE Toolkit](http://etetoolkit.org/cookbook/) - Framework de Python para el análisis y visualización de árboles.
-* [PyQt5](https://www.riverbankcomputing.com/static/Docs/PyQt5/) - Biblioteca de Python utilizada para realizar el Binding de la gráfica.
+* [PyQt5](https://www.riverbankcomputing.com/static/Docs/PyQt5/) - Biblioteca de Python utilizada para realizar el Binding del entorno gráfico.
 
 ***
 
