@@ -36,6 +36,7 @@ _Para correr el software localmente debemos tener instalado tanto Python 3.6 o s
 ***_Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._***
 
 
+
 * Primero, nos asegurarnos que tenemos Python 3.6 o superior correctamente instalado (chequeo a través del Terminal):
 
 ```
@@ -90,6 +91,8 @@ _Para correr el software localmente debemos tener instalado previamente tanto Py
 
 ***_Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._***
 
+
+
 * Primero, nos asegurarnos que tenemos Python 3.6 o superior correctamente instalado. Puede descargarse desde el siguiente [link](https://www.python.org/downloads/windows/).
 
 
@@ -135,11 +138,11 @@ _Seguidamente, podemos cargar un archivo .FASTA o .fst que sólo contenga secuen
 
 _El programa validara este archivo con las siguientes pautas:_
 
-- Que el archivo sea formato .FASTA o .fst.
-- Que su contenido coincida con el formato de un FASTA: cabecera (>|gi|12345|gb|accessionCode) - secuencia (ATGCU).
-- Que el archivo posea además en cada cabecera una locación, unificada por pipes (|) con el siguiente formato ejemplo: |loc| Universidad Nacional de Quilmes, Bernal.
-- Que cada cabecera presente en el archivo tenga su correspondiente secuencia asociada (no pueden quedar cabeceras sin secuencias).
-- Que lo imputado en cada secuencia sean efectivamente secuencias de ADN/ARN.
+1. Que el archivo sea formato .FASTA o .fst.
+2. Que su contenido coincida con el formato de un FASTA: cabecera (>|gi|12345|gb|accessionCode) - secuencia (ATGCU).
+3. Que el archivo posea además en cada cabecera una locación, unificada por pipes (|) con el siguiente formato ejemplo: |loc| Universidad Nacional de Quilmes, Bernal.
+4. Que cada cabecera presente en el archivo tenga su correspondiente secuencia asociada (no pueden quedar cabeceras sin secuencias).
+5. Que lo imputado en cada secuencia sean efectivamente secuencias de ADN/ARN.
 
 _Una vez superada efectivamente esta validación, se cargará el archivo y el programa nos redireccionará automáticamente a un nuevo link donde tendremos cargado:_
 
