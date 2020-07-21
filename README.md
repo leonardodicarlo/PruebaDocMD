@@ -33,7 +33,7 @@ _El trabajo está basado sobre lenguaje Python y bajo el framework de Django, pe
 _Para correr el software localmente debemos tener instalado tanto Python 3.6 o superior, como las respectivas librerías que listamos anteriormente._
 
 
-*** _Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._ ***
+***_Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._***
 
 
 * Primero, nos asegurarnos que tenemos Python 3.6 o superior correctamente instalado (chequeo a través del Terminal):
@@ -88,7 +88,7 @@ $ sudo apt-get install iqtree
 
 _Para correr el software localmente debemos tener instalado previamente tanto Python 3.6 o superior, como las respectivas librerías que listamos anteriormente._
 
-*** _Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._ ***
+***_Nota: En caso de estar corriendo este software en un IDE propio, el repositorio incluye un archivo "requirements.txt" con el que automáticamente se solicita la instalación de todas las bibliotecas necesarias para ejecutar._***
 
 * Primero, nos asegurarnos que tenemos Python 3.6 o superior correctamente instalado. Puede descargarse desde el siguiente [link](https://www.python.org/downloads/windows/).
 
@@ -113,6 +113,7 @@ _En esta misma ruta debemos crear un archivo que se llame ".env" que sea igual a
 ```
   CLUSTAL_PATH='Donde esta instalado Clustal en tu maquina'
   IQTREE_PATH='Donde esta instalado IQTREE en tu maquina'
+  GOOGLE_MAPS_API_KEY='Dejar lo mismo que está en el archivo .env.example'
 ```
 * Con esto deberías estar listo para poder correr el Software.
 
@@ -134,17 +135,18 @@ _Seguidamente, podemos cargar un archivo .FASTA o .fst que sólo contenga secuen
 
 _El programa validara este archivo con las siguientes pautas:_
 
-* Que el archivo sea formato .FASTA o .fst.
-* Que su contenido coincida con el formato de un FASTA: cabecera (>|gi|12345|gb|accessionCode) - secuencia (ATGCU).
-* Que el archivo posea además en cada cabecera una locación, unificada por pipes (|) con el siguiente formato ejemplo: |loc| Universidad Nacional de Quilmes, Bernal.
-* Que cada cabecera presente en el archivo tenga su correspondiente secuencia asociada (no pueden quedar cabeceras sin secuencias).
-* Que lo imputado en cada secuencia sean efectivamente secuencias de ADN/ARN.
+- Que el archivo sea formato .FASTA o .fst.
+- Que su contenido coincida con el formato de un FASTA: cabecera (>|gi|12345|gb|accessionCode) - secuencia (ATGCU).
+- Que el archivo posea además en cada cabecera una locación, unificada por pipes (|) con el siguiente formato ejemplo: |loc| Universidad Nacional de Quilmes, Bernal.
+- Que cada cabecera presente en el archivo tenga su correspondiente secuencia asociada (no pueden quedar cabeceras sin secuencias).
+- Que lo imputado en cada secuencia sean efectivamente secuencias de ADN/ARN.
 
 _Una vez superada efectivamente esta validación, se cargará el archivo y el programa nos redireccionará automáticamente a un nuevo link donde tendremos cargado:_
 
-* Una tabla de tipo acordeón que contiene: Secuencia - Accession de GenBank - Locación.
-* Un mapa con la locación de cada una de las respectivas secuencias cargadas junto con su accession code.
-* Un diagrama de árbol filogenético donde muestra las coincidencias y discrepancias entre las secuencias según las relaciones evolutivas.
+- Una tabla de tipo acordeón que contiene: Secuencia - Accession de GenBank - Locación.
+- Otro desplegable con los diferentes inputs realizados, disponibilizados para su descarga.
+- Un mapa con la locación de cada una de las respectivas secuencias cargadas junto con su accession code.
+- Un diagrama de árbol filogenético donde muestra las coincidencias y discrepancias entre las secuencias según las relaciones evolutivas.
 
 _Por último, se puede descargar la información obtenida y volver a correr el programa con un nuevo archivo de secuencias._
 
