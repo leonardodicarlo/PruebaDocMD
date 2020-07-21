@@ -24,7 +24,7 @@ _El trabajo está basado sobre lenguaje Python y bajo el framework de Django, pe
 * [ClustalW](http://www.clustal.org/clustal2/) - Programa instalado en local para realizar el alineamiento de secuencias biológicas.
 * [IQ-Tree](http://www.iqtree.org/doc/) - Biblioteca de Python para generar estructuras de árboles filogenéticos.
 * [ETE Toolkit](http://etetoolkit.org/cookbook/) - Framework de Python para el análisis y visualización de árboles.
-
+* [PyQt5](https://www.riverbankcomputing.com/static/Docs/PyQt5/) - Biblioteca de Python utilizada para realizar el Binding de la gráfica.
 
 ***
 
@@ -81,7 +81,7 @@ $ sudo apt-get install iqtree
   IQTREE_PATH='Donde esta instalado IQTREE en tu maquina'
   GOOGLE_MAPS_API_KEY='Dejar lo mismo que está en el archivo .env.example'
 ```
-* Con esto deberías estar listo para poder correr el Software.
+**Con esto deberías estar listo para poder correr el Software.
 
 ---
 
@@ -118,7 +118,7 @@ _En esta misma ruta debemos crear un archivo que se llame ".env" que sea igual a
   IQTREE_PATH='Donde esta instalado IQTREE en tu maquina'
   GOOGLE_MAPS_API_KEY='Dejar lo mismo que está en el archivo .env.example'
 ```
-* Con esto deberías estar listo para poder correr el Software.
+**Con esto deberías estar listo para poder correr el Software.
 
 
 ***
