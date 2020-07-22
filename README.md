@@ -149,13 +149,19 @@ _Con esto, ya debiera correr localmente nuestro programa en una nueva ventana de
 
 _Seguidamente, podemos cargar un archivo .FASTA o .fst que sólo contenga secuencias de Ácidos Nucléicos (ADN y ARN, secuencias con A-T-G-C-U)._
 
+***
+
 _El programa validara este archivo con las siguientes pautas:_
 
-1. Que el archivo y su contenido coincidan con el formato de un FASTA: cabecera **(>|gi|12345|gb|accessionCode) - secuencia (ATGCU)**. Es importante que cada secuencia posea su  	accesion number de GenBank, ya que el Software va a buscar toda la información a esta Base de Datos.
-2. Que el archivo posea además en cada cabecera una locación, unificada por pipes (|) con el siguiente formato ejemplo: **|loc| Universidad Nacional de Quilmes, Bernal**. En    	caso de que la secuencia imputada posea una locación cargada en Genbank, el programa tomará esta como principal. Caso contrario, toma la locación cargada por el usuario 	en la cabecera (por esto es que es obligatoria la carga de la locación).
+1. Que el archivo y su contenido coincidan con el formato de un FASTA: cabecera **(>|gi|12345|gb|accessionCode) - secuencia (ATGCU)**. Es importante que cada secuencia posea su  accesion number de GenBank, ya que el Software va a buscar toda la información a esta Base de Datos.
+
+2. Que el archivo posea además en cada cabecera una locación, unificada por pipes (|) con el siguiente formato ejemplo: **|loc| Universidad Nacional de Quilmes, Bernal**. En    caso de que la secuencia imputada posea una locación cargada en Genbank, el programa tomará esta como principal. Caso contrario, toma la locación cargada por el usuario 	en la cabecera (por esto es que es obligatoria la carga de la locación).
+
 3. Que cada cabecera presente en el archivo tenga su correspondiente secuencia asociada (no pueden quedar cabeceras sin secuencias).
+
 4. Que lo imputado en cada secuencia sean efectivamente secuencias de ADN/ARN.
 
+***
 _Una vez superada efectivamente esta validación, se cargará el archivo y el programa nos redireccionará automáticamente a un nuevo link donde tendremos cargado:_
 
 - Una tabla de tipo acordeón que contiene: Accession de GenBank - Descripción de la Secuencia - Fecha de Carga en Genbank.
