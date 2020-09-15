@@ -8,4 +8,4 @@
 ***
 
 ## Diseño UML - (1° Visado) 🛠️
-[link](https://app.diagrams.net/#G1H8Mv_wtT88YW1fZ2egOgU7bcDING7Wiu)
+[link al UML Inicial](https://app.diagrams.net/#G1H8Mv_wtT88YW1fZ2egOgU7bcDING7Wiu)
